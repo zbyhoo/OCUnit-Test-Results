@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2638476614043A3700AC9FBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2638476414043A3700AC9FBC /* InfoPlist.strings */; };
+		2638477214043AA100AC9FBC /* OCUnitListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2638477114043AA100AC9FBC /* OCUnitListener.m */; };
+		2638477514043AD100AC9FBC /* OCUnitListenerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2638477414043AD100AC9FBC /* OCUnitListenerTest.m */; };
+		2638477714043DE100AC9FBC /* OCUnitListenerStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2638477614043DE100AC9FBC /* OCUnitListenerStarter.m */; };
+		2638477B14043FAC00AC9FBC /* JUnitTestResultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2638477A14043FAC00AC9FBC /* JUnitTestResultsStorage.m */; };
+		2638477D140442E900AC9FBC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2638477C140442E900AC9FBC /* SenTestingKit.framework */; };
+		2638477F140442F500AC9FBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2638477E140442F500AC9FBC /* UIKit.framework */; };
+		26384781140442FF00AC9FBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26384780140442FE00AC9FBC /* Foundation.framework */; };
+		263847831404430500AC9FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263847821404430500AC9FBC /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2638475614043A3700AC9FBC /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2638476314043A3700AC9FBC /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		2638476514043A3700AC9FBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2638476B14043A3700AC9FBC /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		2638477014043AA100AC9FBC /* OCUnitListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCUnitListener.h; path = Classes/OCUnitListener.h; sourceTree = "<group>"; };
+		2638477114043AA100AC9FBC /* OCUnitListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCUnitListener.m; path = Classes/OCUnitListener.m; sourceTree = "<group>"; };
+		2638477414043AD100AC9FBC /* OCUnitListenerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCUnitListenerTest.m; sourceTree = "<group>"; };
+		2638477614043DE100AC9FBC /* OCUnitListenerStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCUnitListenerStarter.m; path = Classes/OCUnitListenerStarter.m; sourceTree = "<group>"; };
+		2638477814043EF700AC9FBC /* TestResultsStorageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultsStorageDelegate.h; path = Classes/TestResultsStorageDelegate.h; sourceTree = "<group>"; };
+		2638477914043FAC00AC9FBC /* JUnitTestResultsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JUnitTestResultsStorage.h; path = Classes/JUnitTestResultsStorage.h; sourceTree = "<group>"; };
+		2638477A14043FAC00AC9FBC /* JUnitTestResultsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JUnitTestResultsStorage.m; path = Classes/JUnitTestResultsStorage.m; sourceTree = "<group>"; };
+		2638477C140442E900AC9FBC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2638477E140442F500AC9FBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		26384780140442FE00AC9FBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		263847821404430500AC9FBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		26384784140444BD00AC9FBC /* TestResultsSorageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultsSorageTypes.h; path = Classes/TestResultsSorageTypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2638475214043A3700AC9FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263847831404430500AC9FBC /* CoreGraphics.framework in Frameworks */,
+				26384781140442FF00AC9FBC /* Foundation.framework in Frameworks */,
+				2638477F140442F500AC9FBC /* UIKit.framework in Frameworks */,
+				2638477D140442E900AC9FBC /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2638474814043A0400AC9FBC = {
+			isa = PBXGroup;
+			children = (
+				2638476F14043A4800AC9FBC /* Classes */,
+				2638476114043A3700AC9FBC /* UnitTests */,
+				2638475814043A3700AC9FBC /* Frameworks */,
+				2638475714043A3700AC9FBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2638475714043A3700AC9FBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2638475614043A3700AC9FBC /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2638475814043A3700AC9FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				263847821404430500AC9FBC /* CoreGraphics.framework */,
+				26384780140442FE00AC9FBC /* Foundation.framework */,
+				2638477E140442F500AC9FBC /* UIKit.framework */,
+				2638477C140442E900AC9FBC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2638476114043A3700AC9FBC /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2638476214043A3700AC9FBC /* Supporting Files */,
+				2638477414043AD100AC9FBC /* OCUnitListenerTest.m */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		2638476214043A3700AC9FBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2638476314043A3700AC9FBC /* UnitTests-Info.plist */,
+				2638476414043A3700AC9FBC /* InfoPlist.strings */,
+				2638476B14043A3700AC9FBC /* UnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2638476F14043A4800AC9FBC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2638477014043AA100AC9FBC /* OCUnitListener.h */,
+				2638477114043AA100AC9FBC /* OCUnitListener.m */,
+				2638477614043DE100AC9FBC /* OCUnitListenerStarter.m */,
+				2638477814043EF700AC9FBC /* TestResultsStorageDelegate.h */,
+				2638477914043FAC00AC9FBC /* JUnitTestResultsStorage.h */,
+				2638477A14043FAC00AC9FBC /* JUnitTestResultsStorage.m */,
+				26384784140444BD00AC9FBC /* TestResultsSorageTypes.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2638475514043A3700AC9FBC /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2638476C14043A3700AC9FBC /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				2638475114043A3700AC9FBC /* Sources */,
+				2638475214043A3700AC9FBC /* Frameworks */,
+				2638475314043A3700AC9FBC /* Resources */,
+				2638475414043A3700AC9FBC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 2638475614043A3700AC9FBC /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2638474A14043A0400AC9FBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = zbyhoo;
+			};
+			buildConfigurationList = 2638474D14043A0400AC9FBC /* Build configuration list for PBXProject "OCUnit Test Results" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2638474814043A0400AC9FBC;
+			productRefGroup = 2638475714043A3700AC9FBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2638475514043A3700AC9FBC /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2638475314043A3700AC9FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2638476614043A3700AC9FBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2638475414043A3700AC9FBC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2638475114043A3700AC9FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2638477214043AA100AC9FBC /* OCUnitListener.m in Sources */,
+				2638477514043AD100AC9FBC /* OCUnitListenerTest.m in Sources */,
+				2638477714043DE100AC9FBC /* OCUnitListenerStarter.m in Sources */,
+				2638477B14043FAC00AC9FBC /* JUnitTestResultsStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2638476414043A3700AC9FBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2638476514043A3700AC9FBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2638474F14043A0400AC9FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2638475014043A0400AC9FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2638476D14043A3700AC9FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2638476E14043A3700AC9FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2638474D14043A0400AC9FBC /* Build configuration list for PBXProject "OCUnit Test Results" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2638474F14043A0400AC9FBC /* Debug */,
+				2638475014043A0400AC9FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2638476C14043A3700AC9FBC /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2638476D14043A3700AC9FBC /* Debug */,
+				2638476E14043A3700AC9FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2638474A14043A0400AC9FBC /* Project object */;
+}
