@@ -18,6 +18,6 @@
 - (void) testSuiteEnded:(SenTest*)senTest;
 - (void) testCaseStarted:(SenTest*)senTest;
 - (void) testCaseEnded:(SenTest*)senTest;
-- (void) testCaseFailed:(SenTest*)senTest;
+- (void) testCaseFailed:(SenTest*)senTest withException:(NSException*)exception;
 
 @end

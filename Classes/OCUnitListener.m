@@ -69,7 +69,8 @@
 - (void) testCaseFailed:(NSNotification*)notification
 {
     SenTest* senTest = [notification test];
-    [_storageDelegate testCaseFailed:senTest];
+    NSException* exception = [notification exception];
+    [_storageDelegate testCaseFailed:senTest withException:exception];
 }
 
 @end

@@ -13,12 +13,12 @@
 
 - (void) testSuiteStarted:(SenTest*)senTest
 {
-    NSLog(@"test suite started");
+    NSLog(@"test suite %@ started", senTest.name);
 }
 
 - (void) testSuiteEnded:(SenTest*)senTest
 {
-    NSLog(@"test suite ended");
+    NSLog(@"test suite %@ ended", senTest.name);
 }
 
 - (void) testCaseStarted:(SenTest*)senTest
@@ -31,7 +31,7 @@
     NSLog(@"test case ended");
 }
 
-- (void) testCaseFailed:(SenTest*)senTest
+- (void) testCaseFailed:(SenTest*)senTest withException:(NSException*)exception
 {
     NSLog(@"test case failed");
 }
