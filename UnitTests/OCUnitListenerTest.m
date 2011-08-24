@@ -19,4 +19,9 @@
     STAssertTrue(true, nil);
 }
 
+- (void) test_failed
+{
+    STFail(@"should failed");
+}
+
 @end

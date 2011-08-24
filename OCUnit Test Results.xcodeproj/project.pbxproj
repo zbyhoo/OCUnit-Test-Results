@@ -16,6 +16,8 @@
 		2638477F140442F500AC9FBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2638477E140442F500AC9FBC /* UIKit.framework */; };
 		26384781140442FF00AC9FBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26384780140442FE00AC9FBC /* Foundation.framework */; };
 		263847831404430500AC9FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263847821404430500AC9FBC /* CoreGraphics.framework */; };
+		264669791405753500226819 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 264669781405753500226819 /* GDataXMLNode.m */; };
+		2646697C14057D4800226819 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2646697B14057D4800226819 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		26384780140442FE00AC9FBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		263847821404430500AC9FBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		26384784140444BD00AC9FBC /* TestResultsSorageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultsSorageTypes.h; path = Classes/TestResultsSorageTypes.h; sourceTree = "<group>"; };
+		264669771405753500226819 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Classes/GDataXMLNode.h; sourceTree = "<group>"; };
+		264669781405753500226819 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Classes/GDataXMLNode.m; sourceTree = "<group>"; };
+		2646697B14057D4800226819 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2646697C14057D4800226819 /* libxml2.dylib in Frameworks */,
 				263847831404430500AC9FBC /* CoreGraphics.framework in Frameworks */,
 				26384781140442FF00AC9FBC /* Foundation.framework in Frameworks */,
 				2638477F140442F500AC9FBC /* UIKit.framework in Frameworks */,
@@ -55,6 +61,7 @@
 		2638474814043A0400AC9FBC = {
 			isa = PBXGroup;
 			children = (
+				2646697B14057D4800226819 /* libxml2.dylib */,
 				2638476F14043A4800AC9FBC /* Classes */,
 				2638476114043A3700AC9FBC /* UnitTests */,
 				2638475814043A3700AC9FBC /* Frameworks */,
@@ -103,6 +110,8 @@
 		2638476F14043A4800AC9FBC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				264669771405753500226819 /* GDataXMLNode.h */,
+				264669781405753500226819 /* GDataXMLNode.m */,
 				2638477014043AA100AC9FBC /* OCUnitListener.h */,
 				2638477114043AA100AC9FBC /* OCUnitListener.m */,
 				2638477614043DE100AC9FBC /* OCUnitListenerStarter.m */,
@@ -196,6 +205,7 @@
 				2638477514043AD100AC9FBC /* OCUnitListenerTest.m in Sources */,
 				2638477714043DE100AC9FBC /* OCUnitListenerStarter.m in Sources */,
 				2638477B14043FAC00AC9FBC /* JUnitTestResultsStorage.m in Sources */,
+				264669791405753500226819 /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +259,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +285,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +314,7 @@
 				2638476E14043A3700AC9FBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

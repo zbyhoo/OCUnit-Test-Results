@@ -9,6 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "TestResultsStorageDelegate.h"
 
+@class GDataXMLElement;
+
 @interface JUnitTestResultsStorage : NSObject <TestResultsStorageDelegate>
+{
+@private
+    GDataXMLElement*    testSuitesElement;
+    GDataXMLElement*    currentTestSuiteElement;
+    GDataXMLElement*    currentTestCaseElement;
+}
+
+- (void) storeTestResults;
 
 @end
