@@ -16,7 +16,7 @@ NSString* const TAG_TEST_SUITE          = @"testsuite";
 NSString* const TAG_TEST_CASE           = @"testcase";
 NSString* const TAG_TEST_CASE_FAILURE   = @"failed";
 
-NSString* const DATA_FILE_NAME          = @"testresult.xml";
+NSString* const DATA_FILE_NAME          = @"/tmp/testresult.xml";
 
 @implementation JUnitTestResultsStorage
 
