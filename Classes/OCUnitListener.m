@@ -45,15 +45,13 @@
 - (void) testSuiteStarted:(NSNotification*)notification
 {
     SenTest* senTest = [notification test];
-    if ([[senTest name] hasPrefix:@"/"] == NO)
-        [_storageDelegate testSuiteStarted:senTest];
+    [_storageDelegate testSuiteStarted:senTest];
 }
 
 - (void) testSuiteEnded:(NSNotification*)notification
 {
     SenTest* senTest = [notification test];
-    if ([[senTest name] hasPrefix:@"/"] == NO)
-        [_storageDelegate testSuiteEnded:senTest];
+    [_storageDelegate testSuiteEnded:senTest];
 }
 
 - (void) testCaseStarted:(NSNotification*)notification

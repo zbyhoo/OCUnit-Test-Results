@@ -11,7 +11,7 @@
 
 #import <SenTestingKit/SenTest.h>
 
-NSString* const TAG_TEST_SUITES         = @"testsuites";
+NSString* const TAG_TEST_SUITES         = @"testsuite";
 NSString* const TAG_TEST_SUITE          = @"testsuite";
 NSString* const TAG_TEST_CASE           = @"testcase";
 NSString* const TAG_TEST_CASE_FAILURE   = @"failed";
