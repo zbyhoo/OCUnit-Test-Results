@@ -8,16 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@class SenTest;
+@class DetailedSenTest;
 
 @protocol TestResultsStorageDelegate <NSObject>
 
 @required
 
-- (void) testSuiteStarted:(SenTest*)senTest;
-- (void) testSuiteEnded:(SenTest*)senTest;
-- (void) testCaseStarted:(SenTest*)senTest;
-- (void) testCaseEnded:(SenTest*)senTest;
-- (void) testCaseFailed:(SenTest*)senTest withException:(NSException*)exception;
+- (void) testSuiteStarted:(DetailedSenTest*)senTest;
+- (void) testSuiteEnded:(DetailedSenTest*)senTest;
+- (void) testCaseStarted:(DetailedSenTest*)senTest;
+- (void) testCaseEnded:(DetailedSenTest*)senTest;
+- (void) testCaseFailed:(DetailedSenTest*)senTest withException:(NSException*)exception;
 
 @end

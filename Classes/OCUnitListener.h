@@ -13,6 +13,7 @@
 {
 @private
     id<TestResultsStorageDelegate> _storageDelegate;
+    NSMutableDictionary* _testDetails;
 }
 
 @property (nonatomic, retain) id<TestResultsStorageDelegate> storageDelegate;

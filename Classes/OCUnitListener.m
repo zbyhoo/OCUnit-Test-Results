@@ -7,7 +7,15 @@
 //
 
 #import "OCUnitListener.h"
+#import "DetailedSenTest.h"
+
 #import <SenTestingKit/SenTest.h>
+
+@interface OCUnitListener (Private)
+
+- (DetailedSenTest*) getDetailedSenTest:(SenTest*)senTest;
+
+@end
 
 @implementation OCUnitListener
 
@@ -19,6 +27,7 @@
     if (self) 
     {
         [self initializeNotificationListeners];
+        _testDetails = [[NSMutableDictionary alloc] init];
     }
     
     return self;
@@ -26,6 +35,9 @@
 
 - (void) dealloc
 {
+    [_testDetails release];
+    _testDetails = nil;
+    
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     self.storageDelegate = nil;
 
@@ -44,33 +56,49 @@
 
 - (void) testSuiteStarted:(NSNotification*)notification
 {
-    SenTest* senTest = [notification test];
+    DetailedSenTest* senTest = [self getDetailedSenTest:[notification test]];
+    [senTest startTimer];
     [_storageDelegate testSuiteStarted:senTest];
 }
 
 - (void) testSuiteEnded:(NSNotification*)notification
 {
-    SenTest* senTest = [notification test];
+    DetailedSenTest* senTest = [self getDetailedSenTest:[notification test]];
+    [senTest stopTimer];
     [_storageDelegate testSuiteEnded:senTest];
 }
 
 - (void) testCaseStarted:(NSNotification*)notification
 {
-    SenTest* senTest = [notification test];
+    DetailedSenTest* senTest = [self getDetailedSenTest:[notification test]];
+    [senTest startTimer];
     [_storageDelegate testCaseStarted:senTest];
 }
 
 - (void) testCaseEnded:(NSNotification*)notification
 {
-    SenTest* senTest = [notification test];
+    DetailedSenTest* senTest = [self getDetailedSenTest:[notification test]];
+    [senTest stopTimer];
     [_storageDelegate testCaseEnded:senTest];
 }
 
 - (void) testCaseFailed:(NSNotification*)notification
 {
-    SenTest* senTest = [notification test];
+    DetailedSenTest* senTest = [self getDetailedSenTest:[notification test]];
+    [senTest addFailure];
     NSException* exception = [notification exception];
     [_storageDelegate testCaseFailed:senTest withException:exception];
+}
+
+- (DetailedSenTest*) getDetailedSenTest:(SenTest*)senTest
+{
+    DetailedSenTest* detailedSenTest = [_testDetails objectForKey:senTest.name];
+    if (detailedSenTest == nil)
+    {
+        detailedSenTest = [[DetailedSenTest alloc] initWithSenTest:senTest];
+        [_testDetails setObject:detailedSenTest forKey:senTest.name];
+    }
+    return detailedSenTest;
 }
 
 @end

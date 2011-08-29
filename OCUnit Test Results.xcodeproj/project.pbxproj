@@ -18,6 +18,7 @@
 		263847831404430500AC9FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263847821404430500AC9FBC /* CoreGraphics.framework */; };
 		264669791405753500226819 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 264669781405753500226819 /* GDataXMLNode.m */; };
 		2646697C14057D4800226819 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2646697B14057D4800226819 /* libxml2.dylib */; };
+		26D5664F140C13DB00387E14 /* DetailedSenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D5664E140C13DB00387E14 /* DetailedSenTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		264669771405753500226819 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Classes/GDataXMLNode.h; sourceTree = "<group>"; };
 		264669781405753500226819 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Classes/GDataXMLNode.m; sourceTree = "<group>"; };
 		2646697B14057D4800226819 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		26D5664D140C13DB00387E14 /* DetailedSenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailedSenTest.h; path = Classes/DetailedSenTest.h; sourceTree = "<group>"; };
+		26D5664E140C13DB00387E14 /* DetailedSenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailedSenTest.m; path = Classes/DetailedSenTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				2638477914043FAC00AC9FBC /* JUnitTestResultsStorage.h */,
 				2638477A14043FAC00AC9FBC /* JUnitTestResultsStorage.m */,
 				26384784140444BD00AC9FBC /* TestResultsSorageTypes.h */,
+				26D5664D140C13DB00387E14 /* DetailedSenTest.h */,
+				26D5664E140C13DB00387E14 /* DetailedSenTest.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				2638477714043DE100AC9FBC /* OCUnitListenerStarter.m in Sources */,
 				2638477B14043FAC00AC9FBC /* JUnitTestResultsStorage.m in Sources */,
 				264669791405753500226819 /* GDataXMLNode.m in Sources */,
+				26D5664F140C13DB00387E14 /* DetailedSenTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
